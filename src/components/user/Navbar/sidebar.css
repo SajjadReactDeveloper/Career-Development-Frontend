@@ -1,0 +1,41 @@
+.list li{
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+
+.list Link {
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+
+.list {
+    background-color: black;
+    color: white;
+    padding: 0;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    min-height: 100%;
+}
+
+.list li:last-child {
+    border-bottom: none;
+}
+
+.list li a{
+    color: white;
+    text-decoration: none;
+}
+
+.list li:hover {
+    background-color: white;
+    color: black;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+
+.list li:hover a {
+    color: black;
+}
