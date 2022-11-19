@@ -21,7 +21,7 @@ export default function ViewDiscussion() {
     }
 
     const handleClick = (data) => {
-      history.push("/discussionDetail",
+      history("/discussionDetail",
         {state: data,
       });
     };

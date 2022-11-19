@@ -16,8 +16,7 @@ export default function ViewTest() {
     const getData = async() => {
         try {
             const res = await axios.post("/test/findTest", {university});
-            console.log(res)
-            setData(res.data);
+            setData(res.data[0].questions);
         } catch (error) {
             
         }

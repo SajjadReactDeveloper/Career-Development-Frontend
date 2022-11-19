@@ -27,18 +27,25 @@ export default function ViewApplicants() {
       <p style={{ marginTop: 30, textAlign: "center", fontSize: 30 }}>
         All Applicants
       </p>
-      {data.map((data) => (
-        <div>
-          <button
-            className="btn btn-success mt-3"
-            style={{ marginLeft: 10 }}
-            onClick={() => {
+      {data.map((data, index) => (
+        <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Applicant Name</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style={{ cursor: 'pointer' }} onClick={() => {
               handleClick(data);
-            }}
-          >
-            <p>{data.name}</p>
-          </button>
-        </div>
+            }}>
+            <th scope="row">{index + 1}</th>
+            <td >{data.name}</td>
+            <td >{data.email}</td>
+          </tr>
+        </tbody>
+      </table>
       ))}
     </div>
   );

@@ -30,11 +30,11 @@ export default function ApplicantsDetails() {
         </div>
       </div>
       <div className="m-5">
-        <form action="" >
+        <form action="" onSubmit={(e)=> e.preventDefault()}>
           <input type="text" placeholder="Enter Message" className = "form-control" onChange={(e) => {
           setMessage(e.target.value)
         }} /><br />
-        <button className="btn btn-success" type='submit'>Send Email</button>
+        <button className="btn btn-success" onClick={() => alert('Email Sent Successfully')}>Send Email</button>
         </form>
       </div>
     </div>

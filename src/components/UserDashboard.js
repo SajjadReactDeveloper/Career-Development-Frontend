@@ -10,7 +10,7 @@ export default function UserDashboard() {
           <Sidebar />
         </div>
         <div className="col-9">
-            <Dashboard />
+            <Dashboard data = "User" />
         </div>
       </div>
     </div>

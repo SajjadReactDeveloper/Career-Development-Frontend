@@ -26,9 +26,11 @@ export default function Sidebars() {
             {" "}
             Past Papers{" "}
           </MenuItem>
-          <MenuItem onClick={() => navigate("/viewMaterial")}>
-            {" "}
-            Learning Materials{" "}
+          <MenuItem onClick={() => navigate("/viewVideo")}>
+            View Videos
+          </MenuItem>
+          <MenuItem onClick={() => navigate("/viewFile")}>
+            View Files
           </MenuItem>
           <MenuItem onClick={() => navigate("/discussion")}>
             {" "}

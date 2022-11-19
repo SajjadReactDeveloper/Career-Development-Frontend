@@ -10,7 +10,7 @@ export default function EmployerDashboard() {
           <EmployerSidebar />
         </div>
         <div className="col-9 m-0 p-0">
-            <Dashboard />
+            <Dashboard data = "Employer" />
         </div>
       </div>
     </div>

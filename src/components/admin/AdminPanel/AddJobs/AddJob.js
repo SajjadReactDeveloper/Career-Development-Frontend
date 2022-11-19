@@ -17,7 +17,7 @@ export default function AddJob() {
         }
     }
   return (
-    <div>
+    <div style={{ paddingBottom: 20 }}>
       <form action="" className="p-5 border mt-5" onSubmit={addJob}>
         <p className="text-center">Add Jobs</p>
         <div class="mb-3">
@@ -76,7 +76,7 @@ export default function AddJob() {
             }}
           />
         </div>
-        <button className="btn btn-primary mt-3 mb-3" style={{ float: "right", marginBottom: 10 }}>
+        <button className="btn btn-primary mt-3 mb-3" style={{ float: "right", marginBottom: 20 }}>
           Add Job
         </button>
       </form>

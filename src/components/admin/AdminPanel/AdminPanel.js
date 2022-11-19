@@ -11,7 +11,7 @@ export default function AdminPanel() {
         </div>
         <div className="col-9">
             {/* <AddJob /> */}
-            <Dashboard />
+            <Dashboard data = "Admin" />
         </div>
       </div>
     </div>

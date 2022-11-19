@@ -17,10 +17,14 @@ export default function Login() {
       e.preventDefault();
       try {
           const res = await axios.post('/user/login', {email, password});
-          alert(res.data.msg);
-          localStorage.setItem("firstLogin", true);
-          console.log(res.data.admin);
-          history('/')
+          if(res.data.msg === "Login Successfull!") {
+            localStorage.setItem("firstLogin", true);
+            console.log(res.data.admin);
+            history('/')
+          }
+          else {
+            alert(res.data)
+          }
           
       } catch (error) {
           
